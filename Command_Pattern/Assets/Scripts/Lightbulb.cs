@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Lightbulb : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    bool isPowerOn = false;
+    public void TogglePower()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(!isPowerOn)
+        {
+            GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
+            isPowerOn = true;
+        }
+        else
+        {
+            GetComponent<Renderer>().material.DisableKeyword("_EMISSION");
+            isPowerOn = false;
+        }
     }
 }
