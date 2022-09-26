@@ -631,7 +631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82ac621565da0cd449b0404f3e0dc2d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lightbulb: {fileID: 251286268}
+  _lightbulb: {fileID: 251286268}
 --- !u!4 &1668198985
 Transform:
   m_ObjectHideFlags: 0

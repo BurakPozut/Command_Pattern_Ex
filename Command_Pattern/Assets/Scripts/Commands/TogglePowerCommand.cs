@@ -13,4 +13,9 @@ public class TogglePowerCommand : ICommand
     {
         _lightbulb.TogglePower();
     }
+
+    public void Undo()
+    {
+        _lightbulb.TogglePower();
+    }
 }
